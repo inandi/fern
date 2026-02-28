@@ -39,10 +39,12 @@ This structure is **what the parser outputs** and **what the UI renders** (sideb
 
 ## Supported file types (Phase 1)
 
+Driven by the **language scope registry** (see [06-language-scope.md](06-language-scope.md)). Active scopes:
+
 | Language / extension | Extracted in Phase 1 | Notes |
 |----------------------|----------------------|--------|
 | **PHP / PHTML / TPL** | Class names, methods, variables (properties) | Primary focus; use AST (e.g. php-parser) for classes, methods, docblocks. |
 | **JS** | Functions, ES6 classes (and their methods) | AST or regex for `function`, `class`, method definitions. |
 | **CSS / HTML** | File-level only | Show the file as a single node; no ID/class expansion in Phase 1. |
 
-Expanding **CSS/HTML** to show IDs and classes can be a Phase 2 goal.
+Node, React, ASP.NET, and C/C++ are scoped for later; the structure is set up so they can be added by registering a scope and an extractor.

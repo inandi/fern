@@ -17,3 +17,4 @@ Read in this order for a full design overview:
 | [03-data-flow.md](03-data-flow.md) | Data flow: Workspace Scanner → Symbol Extractor → UI Renderer, with a diagram. |
 | [04-tree-structure.md](04-tree-structure.md) | Tree data shape (JSON) and supported file types for Phase 1 (PHP, JS, CSS/HTML). |
 | [05-challenges-and-mitigations.md](05-challenges-and-mitigations.md) | Performance, deep linking, and Phase 2 ideas (references, call graphs, richer HTML/CSS). |
+| [06-language-scope.md](06-language-scope.md) | Language and project scope: PHP first; Node, React, ASP, C++ planned; registry and extractor structure. |
