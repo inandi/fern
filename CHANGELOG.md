@@ -1,3 +1,14 @@
+# Release v1.1.5 - 2026-03-01
+
+## Improvements
+- **Rebrand to Fern**: Project name updated from Mango to **Fern** across the codebase and documentation.
+- **Version**: Bumped to **v1.1.5** (package.json, package-lock.json).
+- **Commands and UI**: Command id set to `fern.generateMap`; status bar and Command Palette title set to "Fern: Generate Map"; webview panel title set to "Fern Map".
+- **Code**: Extension module header, webview panel function (`createFernMapPanel`), and all user-facing messages (generateMap) now use Fern.
+- **Docs**: README, docs index, architecture, phase 1 features, data flow, and challenges docs updated to Fern; repository link set to github.com/iNandi/fern.
+
+---
+
 # Release v1.1.4 - 2026-03-01
 
 ## Improvements
