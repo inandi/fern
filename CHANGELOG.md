@@ -1,3 +1,15 @@
+# Release v1.1.4 - 2026-03-01
+
+## Improvements
+
+- **Package identity**: Renamed package to `mango-inandi` and set version to **v1.1.3** (package.json, package-lock.json).
+- **.gitignore**: Removed duplicate entries; improved exclusion patterns for OS files and logs; consistent handling of Cursor directory.
+- **Project setup**: Added LICENSE, CHANGELOG.md, release management files (release.md, release.sh, samples), and `.publish-secrets.sample`; introduced `.vscodeignore` for publishing.
+- **README**: Expanded with installation steps, first steps, and usage instructions.
+- **Documentation**: File-header comments and JSDoc added across all TypeScript modules (extension, scanner, types, generateMap, treeBuilder, extractors, languages, webview panel).
+
+---
+
 # Release v1.1.2 - 2026-03-01
 
 ## New Features
