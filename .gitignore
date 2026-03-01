@@ -15,12 +15,11 @@ node_modules/
 
 # OS files
 .DS_Store
-.cursor
 Thumbs.db
 *.swp
 *.swo
 *~
-*.DS_Store
+
 # Logs
 *.log
 npm-debug.log*
@@ -45,5 +44,4 @@ dev.md
 
 # Publishing secrets
 .publish-secrets
-
-./cursor/
+.cursor/
