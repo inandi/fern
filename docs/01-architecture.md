@@ -16,7 +16,7 @@ Two ways to present the map in VS Code:
 | Option | Description |
 |--------|-------------|
 | **TreeDataProvider** | Native sidebar tree. Fits well with VS Code’s UI and ThemeIcons; more restrictive styling. |
-| **Webview Panel** | Dedicated tab with full control over HTML/CSS/JS. Recommended for a modern, "Mango-flavored" look. |
+| **Webview Panel** | Dedicated tab with full control over HTML/CSS/JS. Recommended for a modern, custom look. |
 
 **Recommendation:** Use the **Webview API** for a separate tab so the tree can have custom styling and interaction while still integrating with the editor (e.g. opening files and revealing symbols).
 

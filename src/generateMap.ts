@@ -1,7 +1,7 @@
 /**
  * Generate Map Orchestrator
  *
- * Runs the full "Mango: Generate Map" flow: checks workspace, scans files via the scanner,
+ * Runs the full "Fern: Generate Map" flow: checks workspace, scans files via the scanner,
  * builds the tree with progress reporting, and returns the root nodes. Shows notifications
  * when no folder is open or no supported files are found.
  *
@@ -19,21 +19,21 @@ import { buildTree } from './treeBuilder';
 export async function runGenerateMap(): Promise<TreeNode[] | null> {
   const workspaceFolders = vscode.workspace.workspaceFolders;
   if (!workspaceFolders?.length) {
-    vscode.window.showWarningMessage('Mango: Open a folder first.');
+    vscode.window.showWarningMessage('Fern: Open a folder first.');
     return null;
   }
 
   return vscode.window.withProgress(
     {
       location: vscode.ProgressLocation.Notification,
-      title: 'Mango',
+      title: 'Fern',
       cancellable: false,
     },
     async (progress) => {
       progress.report({ message: 'Scanning workspace…' });
       const files = await scanWorkspace();
       if (files.length === 0) {
-        vscode.window.showInformationMessage('Mango: No supported files found.');
+        vscode.window.showInformationMessage('Fern: No supported files found.');
         return [];
       }
       progress.report({ message: `Indexing ${files.length} files…` });

@@ -22,7 +22,7 @@ The logic flows in three main steps from user action to rendered tree.
 ```mermaid
 flowchart LR
   User[User]
-  Cmd["Mango: Generate Map"]
+  Cmd["Fern: Generate Map"]
   Scanner[Workspace Scanner]
   Extractor[Symbol Extractor]
   State[Tree State]

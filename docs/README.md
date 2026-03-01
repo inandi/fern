@@ -1,8 +1,8 @@
-# Project Mango — Design Documentation
+# Fern — Design Documentation
 
-**Project Mango** is a productivity extension for VS Code that turns a sprawling codebase into a clean, interactive map. It focuses on cross-file logic—especially in PHP—using filesystem traversal and Abstract Syntax Tree (AST) parsing.
+**Fern** is a productivity extension for VS Code that turns a sprawling codebase into a clean, interactive map. It focuses on cross-file logic—especially in PHP—using filesystem traversal and Abstract Syntax Tree (AST) parsing.
 
-The extension follows a **"Scan once, navigate often"** model: indexing is triggered manually (e.g. via "Mango: Generate Map"), and the resulting tree is used for fast navigation and docblock previews without re-parsing on every keystroke.
+The extension follows a **"Scan once, navigate often"** model: indexing is triggered manually (e.g. via "Fern: Generate Map"), and the resulting tree is used for fast navigation and docblock previews without re-parsing on every keystroke.
 
 ---
 

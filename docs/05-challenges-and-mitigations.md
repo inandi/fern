@@ -12,7 +12,7 @@ Anticipated risks for Phase 1 and how to handle them, plus a short Phase 2 outlo
 
 - **Loading / progress indicator** — Show a progress bar or “Indexing…” state so the user knows the extension is working.
 - **Default exclusions** — Skip folders like `vendor`, `node_modules`, and similar by default; allow the user to customize exclusions later if needed.
-- **Scan once, navigate often** — Avoid re-indexing on every keystroke; only index when the user runs “Mango: Generate Map” (or an equivalent trigger).
+- **Scan once, navigate often** — Avoid re-indexing on every keystroke; only index when the user runs “Fern: Generate Map” (or an equivalent trigger).
 
 ---
 

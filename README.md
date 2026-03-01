@@ -1,15 +1,15 @@
 <div align="center">
-  <h1>Mango [Beta]</h1>
+  <h1>Fern [Beta]</h1>
   <p><strong>Interactive Codebase Map</strong></p>
 </div>
 
-Tired of losing track of where classes and methods live? Mango turns your project into a clean, navigable map. **Scan once, navigate often.**
+Tired of losing track of where classes and methods live? Fern turns your project into a clean, navigable map. **Scan once, navigate often.**
 
-## What is Project Mango?
+## What is Fern?
 
-Project Mango is a VS Code extension that indexes your codebase and shows a tree of **folders → files → classes → methods**. It supports PHP (primary), JavaScript, HTML, and CSS. Click any symbol to open the file and jump to the line; hover for PHPDoc or JSDoc. The map lives in a dedicated tab so you can browse structure without leaving the editor.
+Fern is a VS Code extension that indexes your codebase and shows a tree of **folders → files → classes → methods**. It supports PHP (primary), JavaScript, HTML, and CSS. Click any symbol to open the file and jump to the line; hover for PHPDoc or JSDoc. The map lives in a dedicated tab so you can browse structure without leaving the editor.
 
-## Why Use Mango?
+## Why Use Fern?
 
 - **See the Big Picture**: One view of folders, files, classes, and methods—no more hunting through tabs
 - **Scan Once, Navigate Often**: Generate the map on demand; use it for fast navigation until you regenerate
@@ -25,13 +25,13 @@ Project Mango is a VS Code extension that indexes your codebase and shows a tree
 
 1. Open VS Code or Cursor
 2. Go to the Extensions view
-3. Search for **Project Mango** or **Mango**
+3. Search for **Fern**
 4. Click Install
 
 ### First Steps
 
 1. **Open a folder** that contains PHP, JS, HTML, or CSS files
-2. Click **Mango: Generate Map** in the status bar (left) or run it from the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P` → “Mango: Generate Map”)
+2. Click **Fern: Generate Map** in the status bar (left) or run it from the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P` → "Fern: Generate Map")
 3. Wait for indexing to finish (progress appears in the notification area)
 4. The map opens in a new tab. Expand folders and files; click a class or method to open the file and go to that line. Hover for docblocks.
 
@@ -46,7 +46,7 @@ Project Mango is a VS Code extension that indexes your codebase and shows a tree
 
 ### Supported File Types (Phase 1)
 
-| Type    | Extensions   | What’s extracted                          |
+| Type    | Extensions   | What's extracted                          |
 |---------|--------------|-------------------------------------------|
 | PHP     | `.php`, `.phtml`, `.tpl` | Classes, methods, properties, top-level functions, PHPDoc |
 | JS      | `.js`        | Functions, ES6 classes, methods           |
@@ -66,11 +66,11 @@ npm install
 npm run compile
 ```
 
-Press **F5** to launch the Extension Development Host. Open a folder with PHP or JS files, then run **Mango: Generate Map**.
+Press **F5** to launch the Extension Development Host. Open a folder with PHP or JS files, then run **Fern: Generate Map**.
 
 ## Support the Project
 
-If Mango helps your workflow, you can support the project (no pressure):
+If Fern helps your workflow, you can support the project (no pressure):
 
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/igobinda)
 
@@ -78,7 +78,7 @@ If Mango helps your workflow, you can support the project (no pressure):
 
 - **Design & scope**: See the [docs/](docs/) folder (architecture, language scope, tree structure)
 - **Issues**: Found a bug or have an idea? Open an issue on GitHub
-- **Repository**: [github.com/iNandi/mango](https://github.com/iNandi/mango)
+- **Repository**: [github.com/iNandi/fern](https://github.com/iNandi/fern)
 
 ## License
 

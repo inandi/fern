@@ -8,7 +8,7 @@ Phase 1 focuses on **definitions only**: mapping where symbols (classes, methods
 
 | Feature | Description |
 |---------|-------------|
-| **Manual Trigger** | A status bar button or Command Palette entry **"Mango: Generate Map"** starts the indexing job. No automatic scan on keystroke. |
+| **Manual Trigger** | A status bar button or Command Palette entry **"Fern: Generate Map"** starts the indexing job. No automatic scan on keystroke. |
 | **Visual Hierarchy** | **Folder** → **Sub-folder** → **File** → **Class** → **Method/Property**. The tree is recursive and reflects workspace structure plus symbol nesting. |
 | **Iconography** | Use VS Code’s **ThemeIcon** set: folder, file, and language-specific icons so the map is recognizable at a glance. |
 | **Docblock Preview** | Hovering or clicking a method (or other documented symbol) shows a mini-panel with **PHPDoc** or **JSDoc** content. |

@@ -1,5 +1,5 @@
 /**
- * Mango Map Webview Panel
+ * Fern Map Webview Panel
  *
  * Creates and manages the Webview panel for the map tab. Renders the tree as a collapsible
  * hierarchy with icons, click-to-navigate (opens file and reveals line), and docblock
@@ -17,7 +17,7 @@ import { TreeNode } from '../types';
 
 let currentPanel: vscode.WebviewPanel | undefined;
 
-export function createMangoMapPanel(extensionUri: vscode.Uri, tree: TreeNode[]): void {
+export function createFernMapPanel(extensionUri: vscode.Uri, tree: TreeNode[]): void {
   const column = vscode.window.activeTextEditor?.viewColumn ?? vscode.ViewColumn.One;
 
   if (currentPanel) {
@@ -27,8 +27,8 @@ export function createMangoMapPanel(extensionUri: vscode.Uri, tree: TreeNode[]):
   }
 
   const panel = vscode.window.createWebviewPanel(
-    'mangoMap',
-    'Mango Map',
+    'fernMap',
+    'Fern Map',
     column,
     {
       enableScripts: true,
@@ -163,7 +163,7 @@ function getWebviewContent(webview: vscode.Webview, extensionUri: vscode.Uri, tr
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mango Map</title>
+  <title>Fern Map</title>
   <style>
     * { box-sizing: border-box; }
     body {
