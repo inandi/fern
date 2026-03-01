@@ -2,20 +2,20 @@
   "name": "mango",
   "displayName": "Mango",
   "description": "Turn your codebase into a clean, interactive map. Scan once, navigate often. Indexes PHP, JS, HTML, and CSS; shows folder > file > class > method hierarchy with docblock preview and click-to-navigate.",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "publisher": "iNandi",
   "author": {
     "name": "Gobinda Nandi",
     "email": "gobinda.nandi.public@gmail.com",
     "url": "https://inandi.github.io/portfolio/index.html"
   },
-  "icon": "media/logo.png",
+  "icon": "media/logo.jpeg",
   "repository": {
     "type": "git",
     "url": "https://github.com/iNandi/mango"
   },
   "engines": {
-    "vscode": "^1.85.0"
+    "vscode": "^1.74.0"
   },
   "categories": [
     "Other"
@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.10.0",
-    "@types/vscode": "^1.85.0",
+    "@types/vscode": "^1.74.0",
     "typescript": "^5.3.0"
   },
   "dependencies": {
