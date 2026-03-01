@@ -1,3 +1,16 @@
+/**
+ * PHP Symbol Extractor
+ *
+ * Extracts classes, methods, properties, and top-level functions from PHP files using
+ * the php-parser AST. Reads PHPDoc from leadingComments. Returns SymbolInfo[] for
+ * consumption by the extractors index. Handles .php, .phtml, .tpl (via registry).
+ *
+ * @author Gobinda Nandi <gobinda.nandi.public@gmail.com>
+ * @since 1.1.1 [01-03-2026]
+ * @version 1.1.1
+ * @copyright (c) 2026 Gobinda Nandi
+ */
+
 import * as vscode from 'vscode';
 import { SymbolInfo } from './symbols';
 

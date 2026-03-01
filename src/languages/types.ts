@@ -1,7 +1,16 @@
 /**
- * Language/project scope for the map.
- * PHP is primary for now; Node, React, ASP, C++, Python are scoped for later.
+ * Language Scope Type Definitions
+ *
+ * Defines LanguageId, ScopeStatus, and LanguageScope for the language registry. PHP is
+ * primary; Node, React, ASP, C++, Python are scoped for later. Used by registry and
+ * languages index.
+ *
+ * @author Gobinda Nandi <gobinda.nandi.public@gmail.com>
+ * @since 1.1.1 [01-03-2026]
+ * @version 1.1.1
+ * @copyright (c) 2026 Gobinda Nandi
  */
+
 export type LanguageId =
   | 'php'
   | 'js'

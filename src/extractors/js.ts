@@ -1,3 +1,16 @@
+/**
+ * JavaScript Symbol Extractor
+ *
+ * Extracts functions and ES6 classes (and their methods) from JS files via line-based
+ * regex. Phase 1 only; no full AST. Returns SymbolInfo[] for consumption by the
+ * extractors index. Handles .js (via registry).
+ *
+ * @author Gobinda Nandi <gobinda.nandi.public@gmail.com>
+ * @since 1.1.1 [01-03-2026]
+ * @version 1.1.1
+ * @copyright (c) 2026 Gobinda Nandi
+ */
+
 import * as vscode from 'vscode';
 import { SymbolInfo } from './symbols';
 

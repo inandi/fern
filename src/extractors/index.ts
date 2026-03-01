@@ -1,13 +1,25 @@
-import * as vscode from 'vscode';
+/**
+ * Extractors Index / Dispatcher
+ *
+ * Dispatches symbol extraction by file extension using the language registry. Converts
+ * raw SymbolInfo arrays into TreeNode arrays with class nesting (symbolsToTree). Exports
+ * extractSymbols and extractFileAsNode for use by the tree builder. PHP and JS active;
+ * Node, React, ASP, C++, Python planned.
+ *
+ * @author Gobinda Nandi <gobinda.nandi.public@gmail.com>
+ * @since 1.1.1 [01-03-2026]
+ * @version 1.1.1
+ * @copyright (c) 2026 Gobinda Nandi
+ */
+
 import { TreeNode } from '../types';
 import { SymbolInfo } from './symbols';
 import { getExtractorKeyForExtension } from '../languages';
+import type { ScannedFile } from '../scanner';
 import { extractPHP } from './php';
 import { extractJS } from './js';
 
 export type { SymbolInfo } from './symbols';
-
-type ScannedFile = { uri: vscode.Uri; relativePath: string; ext: string };
 
 function symbolsToTree(symbols: SymbolInfo[], filePath: string): TreeNode[] {
   const children: TreeNode[] = [];
@@ -51,7 +63,7 @@ export async function extractSymbols(file: ScannedFile): Promise<TreeNode[]> {
     const symbols = await extractJS(file.uri);
     return symbolsToTree(symbols, path);
   }
-  // When Node, React, ASP, C++ are added: dispatch to extractNode(), extractReact(), etc.
+  // When Node, React, ASP, C++, Python are added: dispatch to the corresponding extractor.
   return [];
 }
 

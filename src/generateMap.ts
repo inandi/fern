@@ -1,3 +1,16 @@
+/**
+ * Generate Map Orchestrator
+ *
+ * Runs the full "Mango: Generate Map" flow: checks workspace, scans files via the scanner,
+ * builds the tree with progress reporting, and returns the root nodes. Shows notifications
+ * when no folder is open or no supported files are found.
+ *
+ * @author Gobinda Nandi <gobinda.nandi.public@gmail.com>
+ * @since 1.1.1 [01-03-2026]
+ * @version 1.1.1
+ * @copyright (c) 2026 Gobinda Nandi
+ */
+
 import * as vscode from 'vscode';
 import { TreeNode } from './types';
 import { scanWorkspace } from './scanner';

@@ -1,3 +1,16 @@
+/**
+ * Workspace Scanner Module
+ *
+ * Iterates the workspace for relevant file types using the language registry. Produces
+ * a list of ScannedFile entries with uri, relativePath, and ext. Exclusions (e.g. vendor,
+ * node_modules) come from the registry.
+ *
+ * @author Gobinda Nandi <gobinda.nandi.public@gmail.com>
+ * @since 1.1.1 [01-03-2026]
+ * @version 1.1.1
+ * @copyright (c) 2026 Gobinda Nandi
+ */
+
 import * as vscode from 'vscode';
 import * as path from 'path';
 import { getGlobPatterns, getExclusions } from './languages';

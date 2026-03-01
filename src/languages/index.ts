@@ -1,3 +1,16 @@
+/**
+ * Language Scope Index
+ *
+ * Public API for the language layer: getGlobPatterns, getExclusions, getActiveScopes,
+ * getPlannedScopes, getExtractorKeyForExtension, getSupportedExtensions. Used by the
+ * scanner and extractors to resolve which files to scan and which extractor to run.
+ *
+ * @author Gobinda Nandi <gobinda.nandi.public@gmail.com>
+ * @since 1.1.1 [01-03-2026]
+ * @version 1.1.1
+ * @copyright (c) 2026 Gobinda Nandi
+ */
+
 import { LANGUAGE_SCOPES } from './registry';
 import type { LanguageScope, LanguageId } from './types';
 

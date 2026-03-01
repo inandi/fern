@@ -1,3 +1,16 @@
+/**
+ * Tree Builder Module
+ *
+ * Builds the folder > file > class > method hierarchy from the list of scanned files.
+ * Uses getOrCreateFolder to build the folder tree and extractFileAsNode to get file nodes
+ * with symbol children. Supports optional progress callbacks during indexing.
+ *
+ * @author Gobinda Nandi <gobinda.nandi.public@gmail.com>
+ * @since 1.1.1 [01-03-2026]
+ * @version 1.1.1
+ * @copyright (c) 2026 Gobinda Nandi
+ */
+
 import { TreeNode } from './types';
 import { ScannedFile } from './scanner';
 import { extractFileAsNode } from './extractors';
