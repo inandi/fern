@@ -1,3 +1,15 @@
+# Release v2.1.1 - 2026-04-07
+
+## Improvements
+- Expanded release automation to publish to both Visual Studio Marketplace and Open VSX Registry.
+- Added package metadata updates to support preview publishing mode.
+
+## Bug Fixes
+- Added release-time validation against `package.json` to prevent publishing with mismatched metadata.
+- Improved error handling when required publishing tokens are missing.
+
+---
+
 # Release v1.1.5 - 2026-03-01
 
 ## Improvements
